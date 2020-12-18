@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Local JSON Validator</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <br>
+    <h1>Local JSON Validator</h1>
+    <br>
+  </header>
+  <div class="container">
+    <form name="main"><textarea id="code" name="code" style="display: none;"></textarea>
+      <div class="validate"><button type="submit" data-ga="validate">Validate</button> <button type="reset"
+          data-ga="clear">Clear</button> <button class="copy" data-ga="copy">Copy</button>
+      </div>
+    </form>
+    <section id="result-container">
+      <h3>Results</h3>
+      <pre id="result" class="error"></pre>
+    </section>
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>
